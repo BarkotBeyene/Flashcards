@@ -1,0 +1,154 @@
+/*.flashcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .card-count {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    width: 80%;
+    max-width: 500px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #31a8e4;
+    text-align: center;
+  }
+  
+  .question {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .answer {
+    font-size: 18px;
+    margin-top: 20px;
+    display: none;
+  }
+  
+  .card.show-answer .question {
+    display: none;
+  }
+  
+  .card.show-answer .answer {
+    display: block;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  .btn-container {
+    margin-top: 20px;
+  }
+  
+  .btn-container > button:first-child {
+    margin-right: 10px;
+  }
+  
+  .btn-container > button:last-child {
+    margin-left: 10px;
+  }*/
+
+
+.flashcards-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+
+.flashcards-title {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+
+.button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+}
+
+
+.button:hover {
+  opacity: 0.8;
+}
+
+
+.card-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  margin-top: 3rem;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  height: 300px;
+  padding: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+
+.card-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+
